@@ -21,9 +21,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', function () {
-    return 'welcome';
-});
+//Route::get('/', function () {
+//    return 'welcome';
+//});
 
 Route::get('r2', function() {
     return view('welcome');
@@ -38,4 +38,4 @@ Route::get('r3', function() {
 
 Route::get('hello/{name?}', function($name='Everybody') {
     return 'Hello, '.$name;
-});
+})->name('hello.index');
